@@ -1,7 +1,7 @@
 import * as React from 'react';
 // import '~/Contact/contact.scss';
 
-export interface ContactSceneProps { }
+export interface ContactSceneProps {}
 
 const ContactScene: React.SFC<ContactSceneProps> = () => (
   <div className="about">

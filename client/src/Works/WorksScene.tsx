@@ -1,7 +1,7 @@
 import * as React from 'react';
 // import '~/Works/works.scss';
 
-export interface WorksSceneProps { }
+export interface WorksSceneProps {}
 
 const WorksScene: React.SFC<WorksSceneProps> = () => (
   <div className="about">

@@ -1,7 +1,7 @@
 import * as React from 'react';
 // import '~/About/about.scss';
 
-export interface AboutSceneProps { }
+export interface AboutSceneProps {}
 
 const AboutScene: React.SFC<AboutSceneProps> = () => (
   <div className="about">

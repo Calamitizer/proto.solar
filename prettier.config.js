@@ -2,7 +2,9 @@
   'use strict';
 
   const config = {
-    // clientRoot: __dirname...
+    printWidth: 100,
+    singleQuote: true,
+    trailingComma: 'es5',
   };
 
   module.exports = config;

@@ -4,11 +4,11 @@ import './tabs.scss';
 
 export interface TabsProps {
   defaultActiveTabIndex: number;
-};
+}
 
 export interface TabsState {
   activeTabIndex: number;
-};
+}
 
 class Tabs extends React.Component<TabsProps, TabsState> {
   constructor(props: TabsProps) {
@@ -27,16 +27,11 @@ class Tabs extends React.Component<TabsProps, TabsState> {
   render() {
     return (
       <div className="tabs">
-        <ul>
-          {/** */}
-        </ul>
-        <div className="tab-active-content">
-          {/** */}
-        </div>
+        <ul>{/** */}</ul>
+        <div className="tab-active-content">{/** */}</div>
       </div>
     );
   }
-
 }
 
 export default Tabs;

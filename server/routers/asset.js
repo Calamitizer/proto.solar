@@ -1,16 +1,15 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    const serveStatic = require('serve-static');
-    const path = require('path');
+  const serveStatic = require('serve-static');
+  const path = require('path');
 
-    const root = path.join(__dirname, '../../client/www');
-    const options = {
-        index: false,
-    };
+  const root = path.join(__dirname, '../../client/www');
+  const options = {
+    index: false,
+  };
 
-    const assetRouter = serveStatic(root, options);
+  const assetRouter = serveStatic(root, options);
 
-    module.exports = assetRouter;
-
+  module.exports = assetRouter;
 })();

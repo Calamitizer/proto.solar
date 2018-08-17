@@ -15,9 +15,12 @@ const Tab: React.SFC<TabProps> = ({ tabIndex, isActive, onClick }) => (
         'tab-link': true,
         active: isActive,
       })}
-      onClick={(event) => {
+      onClick={event => {
         event.preventDefault();
         onClick(tabIndex);
-      }}>Unicorns &amp; Rainbows</a>
+      }}
+    >
+      Unicorns &amp; Rainbows
+    </a>
   </li>
 );

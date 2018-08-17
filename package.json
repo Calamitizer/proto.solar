@@ -5,11 +5,9 @@
   "author": "Alex Ruble <jaruble@ncsu.edu>",
   "license": "MIT",
   "main": "index.js",
-  "engines": {
-    "node": "8.11.3"
-  },
   "scripts": {
-    "build": "webpack",
+    "lint": "prettier --config ./prettier.config.js --write \"**/*.{js{,on},md,scss,ts{,x},yml}\"",
+    "build": "yarn lint && webpack",
     "start": "node ./server/methods/deploy.js",
     "sdev": "nodemon ./server/methods/deploy.js",
     "sweb": "webpack-dev-server"
@@ -34,6 +32,7 @@
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
     "nodemon": "^1.17.5",
+    "prettier": "^1.14.2",
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.3",
     "typescript": "^2.9.2",

@@ -3,8 +3,9 @@ import * as ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Sol from '~/Sol/Sol';
 
-ReactDOM.render((
+ReactDOM.render(
   <Router>
     <Sol />
-  </Router>
-), document.getElementById('mount-point'));
+  </Router>,
+  document.getElementById('mount-point')
+);
