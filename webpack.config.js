@@ -3,6 +3,7 @@
 
   const path = require('path');
   const webpack = require('webpack');
+  const CopyWebpackPlugin = require('copy-webpack-plugin');
   const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
   const resolveDir = subpath => path.resolve(__dirname, subpath);
@@ -35,7 +36,7 @@
       extensions: ['.ts', '.tsx', '.js', '.json'],
       modules: [resolveDir('node_modules'), resolveDir('client/src')],
       alias: {
-        '~': resolveDir('client/src'),
+        ps: resolveDir('client/src'),
       },
     },
 
@@ -61,6 +62,7 @@
     },
 
     plugins: [
+      new CopyWebpackPlugin(['client/src/index.html'], {}),
       new MiniCssExtractPlugin({
         filename: 'sol.css',
       }),

@@ -1,0 +1,12 @@
+// for header and footer
+@mixin ribbon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 1em 0 0;
+    padding: 0 10px;
+    text-align: center;
+    position: relative;
+}

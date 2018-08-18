@@ -1,6 +1,75 @@
-.sol > h1 {
-  color: #f00;
-  font-size: 20rem; }
+.sol .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 1em 0 0;
+  padding: 0 10px;
+  text-align: center;
+  position: relative; }
+  .sol .header > .header-left,
+  .sol .header > .header-right {
+    flex: 1; }
+  .sol .header > .header-center {
+    flex: 2; }
+  .sol .header .header-logo span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    text-shadow: 2px 1px 0 fade(#000, 50%);
+    mix-blend-mode: hard-light; }
+  .sol .header .header-center ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .sol .header .header-center ul > li {
+      flex: 0;
+      margin: 0 1.5em;
+      list-style-type: none; }
+      .sol .header .header-center ul > li a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.8em;
+        text-decoration: none; }
+      .sol .header .header-center ul > li .active {
+        font-size: 1.5em; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.sol {
+  min-width: 100vw;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; }
+  .sol p,
+  .sol a,
+  .sol span {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1em; }
+  .sol h1, .sol h2, .sol h3,
+  .sol h4, .sol h5, .sol h6 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000; }
 
 
 /*# sourceMappingURL=sol.css.map*/

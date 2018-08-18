@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./client/src/Sol/sol.scss"],"names":[],"mappings":"AAAA;AACA;AACA,mBAAmB","file":"main.css","sourcesContent":[".sol > h1 {\n  color: #F00;\n  font-size: 20rem; }\n"],"sourceRoot":""}

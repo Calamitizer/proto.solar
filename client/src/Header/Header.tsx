@@ -1,11 +1,17 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import 'ps/Header/header.scss';
 
 export interface HeaderProps {}
 
 const Header: React.SFC<HeaderProps> = () => (
-  <header>
-    <nav>
+  <header className="header">
+    <div className="header-left">
+      <div className="header-logo">
+        <span>p.s</span>
+      </div>
+    </div>
+    <nav className="header-center">
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -21,6 +27,8 @@ const Header: React.SFC<HeaderProps> = () => (
         </li>
       </ul>
     </nav>
+
+    <div className="header-right" />
   </header>
 );
 
