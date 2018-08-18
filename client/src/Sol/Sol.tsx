@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Header from '~/Header';
-import Content from '~/Content';
+import Header from 'ps/Header';
+import Content from 'ps/Content';
 // import Footer from '~/Footer';
 import './sol.scss';
 

@@ -8,7 +8,7 @@
     "jsx": "react",
     "baseUrl": "client/src",
     "paths": {
-      "~/*": ["*"]
+      "ps/*": ["*"]
     }
   },
   "include": ["./client/src/**/*"]

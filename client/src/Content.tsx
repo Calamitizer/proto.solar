@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import AboutScene from '~/About/AboutScene';
-import ContactScene from '~/Contact/ContactScene';
-import WorksScene from '~/Works/WorksScene';
+import AboutScene from 'ps/About/AboutScene';
+import ContactScene from 'ps/Contact/ContactScene';
+import WorksScene from 'ps/Works/WorksScene';
 
 const Content: React.SFC = () => (
   <main>

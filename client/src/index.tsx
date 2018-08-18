@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Sol from '~/Sol/Sol';
+import Sol from 'ps/Sol/Sol';
 
 ReactDOM.render(
   <Router>
