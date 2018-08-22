@@ -1,0 +1,16 @@
+@import 'sass-material-colors';
+
+$hue-primary: 'deep-orange';
+// $hue-seconday: '';
+// $hue-tertiary: '';
+
+@function material-primary($shade) {
+  @return material-color($hue-primary, $shade);
+}
+
+$color-bg: #fff;
+
+$color-primary: material-primary('400');
+$color-primary-light: material-primary('200');
+$color-primary-dark: material-primary('700');
+$color-primary-bg: material-primary('50');

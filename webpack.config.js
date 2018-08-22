@@ -33,10 +33,11 @@
     },
 
     resolve: {
-      extensions: ['.ts', '.tsx', '.js', '.json'],
+      extensions: ['.ts', '.tsx', '.js', '.json', '.scss'],
       modules: [resolveDir('node_modules'), resolveDir('client/src')],
       alias: {
         ps: resolveDir('client/src'),
+        scss: resolveDir('client/src/scss-common'),
       },
     },
 

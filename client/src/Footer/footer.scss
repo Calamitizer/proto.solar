@@ -1,0 +1,15 @@
+@import 'scss/mixins';
+@import 'scss/dev';
+
+.sol .footer {
+  @include ribbon;
+  // @include dev-border(#00f);
+
+  .copyright {
+    > span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.7em;
+      font-weight: 300;
+    }
+  }
+}

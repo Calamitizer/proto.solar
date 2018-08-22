@@ -1,55 +1,55 @@
-@import '../scss-common/mixins';
+@import 'scss/mixins';
+@import 'scss/dev';
 
 .sol .header {
-    @include ribbon;
+  @include ribbon;
+  // @include dev-border(#0f0);
 
-    > .header-left,
-    > .header-right {
-        flex: 1;
+  > .header-left,
+  > .header-right {
+    flex: 1;
+  }
+
+  > .header-center {
+    flex: 2;
+  }
+
+  .header-logo {
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      font-size: 2.5em;
+      text-shadow: 2px 1px 0 fade(#000, 50%);
+      mix-blend-mode: hard-light;
     }
+  }
 
-    > .header-center {
-        flex: 2;
+  .header-center ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      flex: 0;
+      margin: 0 1.5em;
+
+      list-style-type: none; // ie9
+
+      a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.8em;
+        text-decoration: none;
+      }
+
+      .active {
+        font-size: 1.5em;
+      }
     }
-
-    .header-logo {
-        span {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 600;
-            font-size: 2.5em;
-            text-shadow:
-                2px 1px 0 fade(#000, 50%);
-            mix-blend-mode: hard-light;
-        }
-    }
-
-    .header-center ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        > li {
-            flex: 0;
-            margin: 0 1.5em;
-
-            list-style-type: none; // ie9
-
-            a {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                font-size: 1.8em;
-                text-decoration: none;
-            }
-
-            .active {
-                font-size: 1.5em;
-            }
-        }
-    }
-
+  }
 }
