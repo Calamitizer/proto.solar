@@ -1,2 +1,32 @@
+@import 'scss/colors';
+
 .sol .contact {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 1em;
+
+  .contact-icons {
+    flex: 1;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+
+    .contact-icon {
+      width: 50%;
+      text-align: center;
+      margin: 1em 0;
+
+      a > i {
+        font-size: 25vmin;
+        text-shadow: 0 3px 1px $color-accent-dark-2;
+      }
+    }
+  }
 }

@@ -1,15 +1,20 @@
 import * as React from 'react';
-// import '~/Contact/contact.scss';
+import { generate } from 'shortid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
+import contactItems from 'ps/Contact/contact-items';
+import 'ps/Contact/contact.scss';
+import ContactIcon, { ContactIconProps } from './ContactIcon';
 
 export interface ContactSceneProps {}
 
+const makeContactIcon = (props: ContactIconProps) => <ContactIcon {...props} key={generate()} />;
+
 const ContactScene: React.SFC<ContactSceneProps> = () => (
-  <div className="about">
-    <ul>
-      <li>Contact 1</li>
-      <li>Contact 2</li>
-      <li>Contact 3</li>
-    </ul>
+  <div className="contact">
+    <section className="contact-icons">{contactItems.map(makeContactIcon)}</section>
   </div>
 );
 
