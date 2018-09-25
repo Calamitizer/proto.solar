@@ -7,9 +7,15 @@ const AboutScene: React.SFC<AboutSceneProps> = () => (
   <div className="about">
     <h1>About</h1>
     <ul>
-      <li>About 1</li>
-      <li>About 2</li>
-      <li>About 3</li>
+      <li>
+        <span>About 1</span>
+      </li>
+      <li>
+        <span>About 2</span>
+      </li>
+      <li>
+        <span>About 3</span>
+      </li>
     </ul>
   </div>
 );

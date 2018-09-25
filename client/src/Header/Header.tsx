@@ -14,16 +14,24 @@ const Header: React.SFC<HeaderProps> = () => (
     <nav className="header-center">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link className="header-button" to="/">
+            home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link className="header-button" to="/about">
+            about
+          </Link>
         </li>
         <li>
-          <Link to="/works">Works</Link>
+          <Link className="header-button" to="/works">
+            works
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link className="header-button" to="/contact">
+            contact
+          </Link>
         </li>
       </ul>
     </nav>
