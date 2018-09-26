@@ -4,7 +4,7 @@ import * as React from 'react';
 export interface AboutSceneProps {}
 
 const AboutScene: React.SFC<AboutSceneProps> = () => (
-  <div className="about">
+  <div className="tab about">
     <h1>About</h1>
     <ul>
       <li>

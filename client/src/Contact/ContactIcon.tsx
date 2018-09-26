@@ -11,7 +11,12 @@ export interface ContactIconProps {
 const ContactIcon: React.SFC<ContactIconProps> = ({ href, icon }) => (
   <div className="contact-icon">
     <a {...{ href }} target="_blank">
-      <FontAwesomeIcon {...{ icon }} size="10x" fixedWidth />
+      <div className="icon iconShadow">
+        <FontAwesomeIcon {...{ icon }} size="10x" fixedWidth />
+      </div>
+      <div className="icon iconSurface">
+        <FontAwesomeIcon {...{ icon }} size="10x" fixedWidth />
+      </div>
     </a>
   </div>
 );

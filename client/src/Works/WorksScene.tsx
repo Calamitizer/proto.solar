@@ -4,7 +4,7 @@ import * as React from 'react';
 export interface WorksSceneProps {}
 
 const WorksScene: React.SFC<WorksSceneProps> = () => (
-  <div className="works">
+  <div className="tab works">
     <ul>
       <li>Work 1</li>
       <li>Work 2</li>

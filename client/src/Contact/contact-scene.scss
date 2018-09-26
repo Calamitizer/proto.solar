@@ -1,0 +1,73 @@
+@import 'scss/colors';
+
+@function shadow($yOffset, $blur) {
+  @return drop-shadow(0 $yOffset $blur $color-accent-dark);
+}
+
+.sol .contact {
+  .contact-icons {
+    flex: 1;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+
+    .contact-icon {
+      flex: 1 0 50%;
+      height: 50%;
+
+      .svg-inline--fa {
+        filter:
+          shadow(0.5px, 0)
+          shadow(1px, 0)
+          shadow(1.5px, 0)
+          shadow(2px, 0)
+          shadow(2.5px, 0)
+          shadow(3px, 0)
+          shadow(3.5px, 0)
+        ;
+      }
+
+      a {
+        display: block;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        height: 100%;
+
+        .icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 1.5em;
+        }
+
+        .iconShadow {
+          display: none;
+          z-index: 1;
+          color: $color-accent-dark;
+          padding-top: 10px;
+        }
+
+        .iconSurface {
+          z-index: 3;
+          color: $color-accent;
+        }
+
+        &:focus,
+        &:hover {
+          .iconShadow {
+            color: $color-accent;
+          }
+
+          .iconSurface {
+            color: $color-accent-light;
+          }
+        }
+      }
+    }
+  }
+}

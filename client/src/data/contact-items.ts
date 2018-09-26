@@ -1,6 +1,6 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithubAlt, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { ContactIconProps } from 'ps/Contact/ContactIcon';
 
 const contactItems: ContactIconProps[] = [
@@ -12,12 +12,12 @@ const contactItems: ContactIconProps[] = [
   {
     name: 'Github',
     href: 'https://github.com/calamitizer',
-    icon: faGithub,
+    icon: faGithubAlt,
   },
   {
     name: 'LinkedIn',
     href: 'https://linkedin.com/in/jalexruble',
-    icon: faLinkedin,
+    icon: faLinkedinIn,
   },
   {
     name: 'Twitter',
