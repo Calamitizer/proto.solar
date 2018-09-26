@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-import contactItems from 'ps/Contact/contact-items';
+import contactItems from 'ps/data/contact-items';
 import 'ps/Contact/contact.scss';
 import ContactIcon, { ContactIconProps } from './ContactIcon';
 
